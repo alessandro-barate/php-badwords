@@ -11,5 +11,4 @@ echo 'Questo è il paragrafo inserito:' . ' ' . $paragraph .
 echo 'Così è come si presenta la parola censurata:' . ' ' . $censored_hidden . "<br />\n" . "<br />\n";
 
 
-
-echo 'Questo è il paragrafo con censura:' . ' ' . $paragraph . $censored;
+echo 'Questo è il paragrafo con censura:' . ' ' . substr($paragraph, $censored_hidden);
